@@ -1,13 +1,22 @@
 #include<stdio.h>
+#include<locale.h>
 
 int main(){
 
-    int a = 5;
-    int b = 4;
+setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    printf("O maior  número é: %d\n", (a + b));
+    int a;
+    int b = 19;
 
-    
+    printf("Digite um valor para a: ");
+    scanf("%d", &a);
+
+    printf("A soma é: %d\n", (a + b));
+    printf("A subtração é: %d\n", (a - b));
+    printf("A multiplicação é: %d\n", (a * b));
+    printf("A divisão é: %d\n", (a / b));
+
+
 
     return 0;
  
