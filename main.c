@@ -1,20 +1,22 @@
 #include<stdio.h>
 #include<locale.h>
+#include<stdbool.h>
 
 int main(){
 
 setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int a;
-    int b = 19;
+    int n;
 
-    printf("Digite um valor para a: ");
-    scanf("%d", &a);
+    printf("Digite um numero: ");
+    scanf("%d", &n);
 
-    printf("A soma é: %d\n", (a + b));
-    printf("A subtração é: %d\n", (a - b));
-    printf("A multiplicação é: %d\n", (a * b));
-    printf("A divisão é: %d\n", (a / b));
+    printf("Antecessor: %d\n", n - 1);
+    printf("Sucessor: %d\n", n + 1);
+
+    int m = n - 1;
+
+    printf("multiplicação: %d\n", (n * m));
 
 
 
