@@ -6,16 +6,23 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int segundos, horas, minutos, restos;
+    int n;
 
-    printf("digite a guantidade de segundos: ");
-    scanf("%d", &segundos);
+    printf("digite um numero: ");
+    scanf("%d", &n);
 
-    horas = segundos / 3600;
-    minutos = (segundos % 3600) / 60;
-    restos = segundos % 60;
+    // if(....){
+    //      code..
+    // }
 
-    printf("%d horas, %d minutos e %d segundos\n", horas, minutos, restos);
+    if(n > 0){
+        printf("positivo\n");
+    }else{
+        printf("negativo\n");
+    }
+
+
+
 
     return 0;
  
