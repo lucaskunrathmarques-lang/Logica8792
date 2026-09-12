@@ -1,20 +1,19 @@
 #include<stdio.h>
-#include<locale.h>
-#include<stdbool.h>
+#include<windows.h>
 
 int main(){
 
-setlocale(LC_ALL, "pt_BR.UTF-8");
+    SetConsoleCP(65001);
+    SetConsoleOutputCP(65001);
 
-    int idade;
-    printf("digite a idade: ");
-    scanf("%d", &idade);
-    //tes
+    float raio;
+    const float PI = 3.14159;   
 
-
-    printf("equivale a %d meses\n", idade * 12);
-    printf("equivale a %d dias (aproximado)\n", idade * 365);
-
+    printf("Digite o raio do circulo: ");
+    scanf("%f", &raio);
+    
+    printf("Area: %.2f\n", PI * raio * raio);
+    printf("Perimetro: %.2f\n", 2 * PI * raio);
 
     return 0;
  
