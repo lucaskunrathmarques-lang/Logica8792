@@ -11,11 +11,7 @@ int main(){
     printf("digite um numero: ");
     scanf("%d", &n);
 
-    if(n % 2 == 0){
-        printf("\npar");
-    }else{
-        printf("\nimpar");
-    }
+    printf("%s", n % 2 == 0 ? "\npar" : "\nimpar");
 
     
 
