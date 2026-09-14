@@ -11,11 +11,18 @@ int main(){
     printf("digite idade: ");
     scanf("%d", &idade);
 
-    if(idade >= 18){
-        printf("vocé é maior de idade!");
+    if(idade >= 50){
+        printf("vocé é um seior");
+    }else if(idade >= 18){
+        printf("Voce é maior de idade");
+    }else if(idade >= 12){
+        printf("voce é um adolecente");
+    }else if(idade >= 9){
+        printf("voce é um pre-adolecente");
     }else{
-        printf("vocé é menor de idade");
+        printf("voce é uma criança");
     }
+    
 
     
 
