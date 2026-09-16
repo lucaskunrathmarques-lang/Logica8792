@@ -7,18 +7,17 @@ int main(){
     SetConsoleOutputCP(65001);
 
     int idade;
-    float altura;
+    int ohEstudante;
 
-    printf("bem-vindo ao brinquedo roleta da morte!");
-    printf("\nqual sau idade?");
+    printf("qual sua idade?");
     scanf("%d", &idade);
-    printf("\nqual sua altura?");
-    scanf("%f", &altura);
+    printf("\nvoce é estudante ( 0 - não | 1 - sim):");
+    scanf("%d", &ohEstudante);
 
-    if((idade >= 18) || (altura >= 1.60)){
-        printf("voce pode brincar na roleta!");
+    if((idade >= 60) && (ohEstudante == 1)){
+        printf("parabens, voce tem direito a desconto!");
     }else{
-        printf("voce nao pode brincar na roleta!");
+        printf("infelismente voce não tera desconto");
     }
 
     return 0;
