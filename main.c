@@ -11,20 +11,28 @@ int main(){
     printf("digite um unmero de (1 a 7): ");
     scanf("%d", &diaDeSemana);
 
-    if(diaDeSemana == 1){
-        printf("domingo");
-    }else if(diaDeSemana == 2){
-        printf("segunda-feira");
-    }else if(diaDeSemana == 3){
-        printf("terça-feira");
-    }else if(diaDeSemana == 4){
-        printf("quarta-feira");
-    }else if(diaDeSemana == 5){
-        printf("quinta-feira");
-    }else if(diaDeSemana == 6){
-        printf("sexta-feira");
-    }else if(diaDeSemana == 7){
-        printf("sabado");
+    switch(diaDeSemana){
+        case 1:
+            printf("domingo");
+            break;
+        case 2:
+            printf("segunda-feira");
+            break;
+        case 3:
+            printf("terça-feira");
+            break;
+        case 4:
+            printf("quarta-feira");
+            break;
+        case 5:
+            printf("quinta-feira");
+            break;
+        case 6:
+            printf("sexta-feira");
+            break;
+        case 7:
+            printf("sabado");
+            break;
     }
 
     return 0;
