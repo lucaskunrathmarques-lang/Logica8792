@@ -6,20 +6,20 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int a, b, c;
+    int idade;
+    float altura;
 
-    printf("digite dois numeros");
-    scanf("%d %d %d", &a, &b, &c);
+    printf("bem-vindo ao brinquedo roleta da morte!");
+    printf("\nqual sau idade?");
+    scanf("%d", &idade);
+    printf("\nqual sua altura?");
+    scanf("%f", &altura);
 
-    if((a != b) && (b != c)){
-        printf("os tres numeros são diferentes\n");
-    }else if(b != c){
-        printf("os dois numeros sao diferentes\n");
+    if((idade >= 18) && (altura >= 1.60)){
+        printf("voce pode brincar na roleta!");
     }else{
-        printf("todos os numeros sao iguais.");
+        printf("voce nao pode brincar na roleta!");
     }
-
-
 
     return 0;
  
