@@ -33,6 +33,10 @@ int main(){
         case 7:
             printf("sabado");
             break;
+        default:
+            printf("numero invalido!!");
+            break;
+
     }
 
     return 0;
