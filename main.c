@@ -8,33 +8,26 @@ int main(){
 
     
 
-   int opcao;
+    float n1, n2, n3, media;
 
-   printf("--- SISTEMA DE PEDAGIO ---\n");
-   printf("1 - moto\n");
-   printf("2 - carro passeio\n");
-   printf("3 - caminhão\n");
-   printf("4 - onibus\n");
-   scanf("%d", &opcao);
+    printf("digite a nota 1: ");
+    scanf("%f", &n1);
 
-   switch (opcao)
-   {
-        case 1:
-            printf("categoria moto | tarifa R$5.00\n");
-            break;
-        case 2:
-            printf("categoria carro passeio | tarifa R$10.00\n");
-            break;
-        case 3:
-            printf("categoria caminhão | tarifa R$25.00\n");
-            break;
-        case 4:
-           printf("categoria anibus | tarifa R$20.00\n");
-           break;
-        default:
-            printf("erro: categoria não cadastrada no sistema");
-            break;
-   }
+    printf("digite a nota 2: ");
+    scanf("%f", &n2);
+
+    printf("\ndigite a nota 3: ");
+    scanf("%f", &n3);
+
+    media = (n1 + n2 + n3) / 3;
+
+    if(media >= 7){
+        printf("aprovado");
+    }else if(media >= 5){
+        printf("recuperação");
+    }else{
+        printf("reprovado");
+    }
     
 
     return 0;
