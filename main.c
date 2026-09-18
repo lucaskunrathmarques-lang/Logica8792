@@ -6,38 +6,36 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int diaDeSemana;
+    
 
-    printf("digite um unmero de (1 a 7): ");
-    scanf("%d", &diaDeSemana);
+   int opcao;
 
-    switch(diaDeSemana){
+   printf("--- SISTEMA DE PEDAGIO ---\n");
+   printf("1 - moto\n");
+   printf("2 - carro passeio\n");
+   printf("3 - caminhão\n");
+   printf("4 - onibus\n");
+   scanf("%d", &opcao);
+
+   switch (opcao)
+   {
         case 1:
-            printf("domingo");
+            printf("categoria moto | tarifa R$5.00\n");
             break;
         case 2:
-            printf("segunda-feira");
+            printf("categoria carro passeio | tarifa R$10.00\n");
             break;
         case 3:
-            printf("terça-feira");
+            printf("categoria caminhão | tarifa R$25.00\n");
             break;
         case 4:
-            printf("quarta-feira");
-            break;
-        case 5:
-            printf("quinta-feira");
-            break;
-        case 6:
-            printf("sexta-feira");
-            break;
-        case 7:
-            printf("sabado");
-            break;
+           printf("categoria anibus | tarifa R$20.00\n");
+           break;
         default:
-            printf("numero invalido!!");
+            printf("erro: categoria não cadastrada no sistema");
             break;
-
-    }
+   }
+    
 
     return 0;
  
