@@ -19,6 +19,8 @@ int main(){
    imc = peso / (altura + altura);
 
    if(imc < 18.5){
+   printf("sue peso é: %f\n", peso);
+   printf("sua altura é: %f\n", altura );
     printf("classificação: abaixo do peso\n");
    }else if(imc < 25){
     printf("classificação: peso normal\n");
