@@ -8,18 +8,25 @@ int main(){
 
     
 
-   int ano;
-   printf("digite o ano:");
-   scanf("%d", &ano);
+   float peso, altura, imc;
 
-   if((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0){
-    printf("ano: %d\n", ano);
-    printf("ano bissexto!\n");
+   printf("digite um pedo (kg):");
+   scanf("%f", &peso);
+
+   printf("digite a altura (m)");
+   scanf("%f", &altura);
+
+   imc = peso / (altura + altura);
+
+   if(imc < 18.5){
+    printf("classificação: abaixo do peso\n");
+   }else if(imc < 25){
+    printf("classificação: peso normal\n");
+   }else if(imc < 30){
+    printf("classificação: acima do peso\n");
    }else{
-    printf("ano %d\n", ano);
-    printf("ano nao é bissexto\n");
+    printf("classificação: obesidade\n");
    }
-
 
     
 
