@@ -8,14 +8,18 @@ int main(){
 
     
 
-   char letra;
-   printf("digite uma letra: ");
-   scanf("%c", &letra);
+   int n;
+   printf("digite um numero:");
+   scanf("%d", &n);
 
-   if(letra == 'a' || letra == 'e' || letra == 'i' || letra =='o' || letra == 'u' || letra == 'A' || letra == 'I' || letra == 'E' || letra == 'O' || letra == 'U'){
-    printf("vogal\n");
+   if(n % 3 == 0 && n % 5 == 0){
+    printf("multiplo de 3 e 5\n");
+   }else if(n % 3 == 0){
+    printf("multiplo de 3\n");
+   }else if(n % 5 == 0){
+    printf("multiplo de 5\n");
    }else{
-    printf("consoante\n");
+    printf("nao é um multiplo de 3 nem de 5\n");
    }
 
 
