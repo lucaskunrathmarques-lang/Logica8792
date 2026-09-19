@@ -8,18 +8,16 @@ int main(){
 
     
 
-   int n;
-   printf("digite um numero:");
-   scanf("%d", &n);
+   int ano;
+   printf("digite o ano:");
+   scanf("%d", &ano);
 
-   if(n % 3 == 0 && n % 5 == 0){
-    printf("multiplo de 3 e 5\n");
-   }else if(n % 3 == 0){
-    printf("multiplo de 3\n");
-   }else if(n % 5 == 0){
-    printf("multiplo de 5\n");
+   if((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0){
+    printf("ano: %d\n", ano);
+    printf("ano bissexto!\n");
    }else{
-    printf("nao é um multiplo de 3 nem de 5\n");
+    printf("ano %d\n", ano);
+    printf("ano nao é bissexto\n");
    }
 
 
