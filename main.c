@@ -8,12 +8,14 @@ int main(){
 
     
 
-   char frutas[4][20] = {"maça", "banana", "uva", "morango"};
+   char nomes[4][20] = {"caio", "joao", "rafael", "lucas"};
 
-   printf("%s\n", frutas[0]); 
-   printf("%s\n", frutas[1]);
-   printf("%s\n", frutas[2]);
-   printf("%s\n", frutas[3]); 
+   printf("%s\n", nomes[0]);
+   printf("%s\n", nomes[1]);
+   printf("%s\n", nomes[2]);
+   printf("%s\n", nomes[3]); 
+  
+   
     
 
     return 0;
