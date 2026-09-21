@@ -8,10 +8,12 @@ int main(){
 
     
 
-   for(int i = 1; i <= 100; i++){
+   for(int i = 1; i <= 10000; i++){
     printf("%d\n", i);
+    i++;
    }
 
+    printf("\nMeu for funcionou!!");
     
 
     return 0;
