@@ -8,12 +8,12 @@ int main(){
 
     
 
-   for(int i = 1; i <= 10000; i++){
-    printf("%d\n", i);
-    i++;
-   }
+   char frutas[4][20] = {"maça", "banana", "uva", "morango"};
 
-    printf("\nMeu for funcionou!!");
+   printf("%s\n", frutas[0]); 
+   printf("%s\n", frutas[1]);
+   printf("%s\n", frutas[2]);
+   printf("%s\n", frutas[3]); 
     
 
     return 0;
