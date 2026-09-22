@@ -8,6 +8,13 @@ int somar(int a, int b){
 int subtrair(int a, int b){
     return a - b;
 }
+int dividir(int a, int b){
+    if(b <= 0){
+        printf("ele precisa ser maior que 0!");
+    }else{
+        return a / b;
+    }
+}
 
 
 int main(){
@@ -20,6 +27,9 @@ int main(){
     
     int resultadoSubtração = subtrair(100, 30);
     printf("o resultado da subtração é: %d\n", resultadoSubtração);
+
+    int resultadoDividir = dividir(100, 5);
+    printf("o resultado de dividir é: %d\n", resultadoDividir);
 
 
 
