@@ -4,6 +4,7 @@
 
 void saudar(){
     printf("ola mundo!\n");
+    printf("como voce esta?\n");
 }
 
 int main(){
