@@ -8,11 +8,12 @@ int main(){
 
     
 
-    int numeros[] = {10, 20, 30};
+    int x = 10;
+    int *p = &x;
 
-    int lenght = sizeof(numeros) / sizeof(numeros[0]);
-
-    printf("%d", lenght);
+    printf("valor de x: %d\n", x);
+    printf("endereço de x: %p\n", &x);
+    printf("valor via ponteiro: %d\n", *p);
 
 
 
