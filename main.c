@@ -8,11 +8,11 @@ int main(){
 
     
 
-    int numeros[] = {1, 2, 3};
+    int numeros[] = {10, 20, 30};
 
-    numeros[0] = 10;
+    int lenght = sizeof(numeros) / sizeof(numeros[0]);
 
-    printf("%d", numeros[0]);
+    printf("%d", lenght);
 
 
 
