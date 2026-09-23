@@ -3,7 +3,13 @@
 #include<string.h>
 #include<math.h>
 
-
+    int fatorial(int n){
+        int resultado = 1;
+        for(int i = 1; i <= n; i++){
+            resultado *= i;
+        }
+        return resultado;
+    }
 
 
 int main(){
@@ -11,12 +17,8 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    char nome[50];
-
-    printf("digite seu nome completo aqui: ");
-    fgets(nome, sizeof(nome), stdin);
-
-    printf("ola %s", nome);
+    int numero = 10;
+    printf("fatorial de %d = %d\n", numero, fatorial(numero));
 
 
 
