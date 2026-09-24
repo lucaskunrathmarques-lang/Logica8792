@@ -14,13 +14,16 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int i = 1;
+    int i;
 
-    while (i <= 5){
-        printf("%d\n", i);
-        i++;
+    printf("digite um numero: ");
+    scanf("%d", &i);
+
+    while(i <= 0){
+        printf("numero invalido! digite novamente:");
+        scanf("%d", &i);
     }
-    
+    printf("numero valido: %d\n", i);
 
 
 
