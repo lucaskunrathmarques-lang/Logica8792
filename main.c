@@ -14,11 +14,15 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    for(int i = 0; i <=50; i++){
+    int i = 1;
+    while (i <= 50)
+    {
         if(i % 2 == 0){
             printf("%d\n", i);
         }
+        i++;
     }
+    
 
 
     
