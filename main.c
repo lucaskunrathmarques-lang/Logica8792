@@ -4,13 +4,7 @@
 #include<math.h>
 
 
-int ehPrimo(int n){
-    if(n < 2)return 0;
-    for(int i = 2; i < n; i++){
-        if(n % i == 0)return 0;
-    }
-    return 1;
-}
+
 
     
 
@@ -21,15 +15,22 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int numero;
-    printf("digite um numero:");
-    scanf("%d", &numero);
+    int n, soma = 0;
 
-    if(ehPrimo(numero))
-        printf("%d é primo\n", numero);
-    else
-        printf("%d nao é primo\n", numero);
+    printf("digite um numero:");
+    scanf("%d", &n);
+
+    for(int i = 1; i < n; i++){
+        if(n % i == 0){
+            soma += i;
+        }
+    }
     
+    if(soma == n){
+        printf("%d é um numero perfeito\n", n);
+    }else{
+        printf("%d não é um numero perfeito\n", n);
+    }
 
 
 
