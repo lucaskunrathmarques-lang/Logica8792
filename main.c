@@ -15,12 +15,20 @@ int main(){
     SetConsoleOutputCP(65001);
 
     int n;
+    int resultado;
 
     printf("digite um numero:");
-    scanf("%d",  &n);
+    resultado = scanf("%d",  &n);
 
+   if(resultado != 1){
+    printf("entrada invalida! por favor, digite apenas numeros!");
+    return 1;
+   }
+   
+   
     for(int i = 1; i <= 10; i++){
-    printf("%d x %d = %d\n", n, i, n * i);
+        int resposta = n * i;
+        printf("%d x %d = %d\n", n, i, resposta);
     }
     
 
