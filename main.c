@@ -14,19 +14,18 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int n;
-    float valor, soma = 0;
+    int n, contador;
+    
 
-    printf("quantos numeros deseja digitar:");
+    printf("digite um numero (0 para parar): \n");
     scanf("%d", &n);
 
-    for(int i = 0; i < n; i++){
-        printf("digite o numero %d: ", i + 1);
-        scanf("%f", &valor);
-        soma += valor;
+    while(n != 0){
+        contador++;
+        scanf("%d", &n);
     }
-    printf("media: %.2f\n", soma / n);
 
+    printf("quantidade de numeros digitados: %d\n", contador);
     
     
 
