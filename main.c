@@ -15,23 +15,20 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int n, soma = 0;
+    int n, invertido = 0, resto;
+
 
     printf("digite um numero:");
     scanf("%d", &n);
 
-    for(int i = 1; i < n; i++){
-        if(n % i == 0){
-            soma += i;
-        }
+    while (n != 0)
+    {
+        resto = n % 10;
+        invertido = invertido * 10 + resto;
+        n /= 10;
     }
     
-    if(soma == n){
-        printf("%d é um numero perfeito\n", n);
-    }else{
-        printf("%d não é um numero perfeito\n", n);
-    }
-
+    printf("o numero ao contrario: %d\n", invertido);
 
 
 
