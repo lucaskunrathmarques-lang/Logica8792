@@ -15,19 +15,59 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int n;
-    float nota, soma = 0;
+    int o;
+    float a, b;
 
-    printf("quantos alunos tem a turma:");
-    scanf("%d", &n);
+    do{
+        printf("\n---MENU---\n");
+        printf("1 - soma\n");
+        printf("2 - subtração\n");
+        printf("3 - multiplicador\n");
+        printf("4 - divisao\n");
+        printf("0 - sair\n");
+        printf("escolha um opção:");
+        scanf("%d", &o);
 
-    for(int i = 0; i < n; i++){
-        printf("digite a nota do aluno %d: \n", i + 1);
-        scanf("%f", &nota);
-        soma = soma + nota;
-    }
+        switch (o)
+        {
+        case 1:
+            printf("digite dois numeros:");
+            scanf("%f %f", &a, &b);
+            printf("resultado: %.f\n", a + b);
+            break;
+       
+        case 2:
+            printf("digite dois numeros:");
+            scanf("%f %f", &a, &b);
+            printf("resultado: %.2f\n", a - b);
+            break;
+        
+        case 3:
+            printf("digite dois numeros:");
+            scanf("%f %f", &a, &b);
+            printf("resultado: %.2f\n", a * b);
+            break;
+        
+        case 4:
+            printf("digite dois numeros:");
+            scanf("%f %f", &a, &b);
+            if(b != 0){
+                printf("resultado: %.2f\n", a / b);
+            }else{
+                printf("erro: divisao por zero\n");
+                break;
+            }
+        
+        case 0:
+            printf("saindo...");
+            break;
 
-    printf("media da turma: %.2f\n", soma / n);
+        default:
+            printf("opçao invalida\n");
+            break;
+        }
+    }while(o != 0);
+
 
 
 
