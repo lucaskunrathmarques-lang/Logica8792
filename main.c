@@ -15,15 +15,9 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int n;
-
-    printf("digite um numero:");
-    scanf("%d", &n);
-
-    for(int i = 1; i <= 10; i++){
-
-        for(int o = n; o <= 10; o++){
-            printf("%d X %d = %d\n", o, i, o * i);
+    for(int i = 1; i <= 5; i++){
+        for(int j = 1; j <= 5; j++){
+            printf("for interno e for externo: %d   %d\n", j, i);
         }
         printf("\n");
     }
