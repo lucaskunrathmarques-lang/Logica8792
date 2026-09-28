@@ -15,14 +15,13 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    for(int i = 1; i <= 5; i++){
-        for(int j = 1; j <= 5; j++){
-            printf("for interno e for externo: %d   %d\n", j, i);
-        }
-        printf("\n");
+    int i;
+
+    for(i = 0000; i <= 9999; i++){
+        printf("%d\n", i);
     }
 
-
+    printf("o numero de combinações são de: %d", i);
 
     return 0;
  
