@@ -15,13 +15,20 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int i;
+    int contador = 0;
 
-    for(i = 0000; i <= 9999; i++){
-        printf("%d\n", i);
+    for(int i = 0; i <= 9; i++){
+        for(int j = 0; j <= 9; j++){
+            for(int l = 0; l <= 9; l++){
+                for(int k = 0; k <= 9; k++){
+                    contador++;
+                    printf("os possiveis resultados da cadeado: %d %d %d %d\n", i, j, l, k);
+                }
+            }
+        }
     }
 
-    printf("o numero de combinações são de: %d", i);
+    printf("o numero de combinações são de: %d", contador++);
 
     return 0;
  
