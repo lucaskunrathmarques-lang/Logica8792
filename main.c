@@ -15,26 +15,30 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int n, primo = 1;
+    int n, contador = 0;
 
-    printf("digite um numero: ");
+    printf("digite o limite N:");
     scanf("%d", &n);
 
-    if(n < 2){
-        primo = 0;
-    }else{
-        for(int i = 2; i < n; i++){
-            if(n % i == 0)
-            primo = 0;
-            break;
+    for(int i = 2; i <= n; i++){
+        int primo =1;
+        for(int l = 2; l < i; l++){
+            if(i % l == 0){
+                primo = 0;
+                break;
+            }
         }
-
         if(primo){
-        printf("%d é primo\n", n);
-        }else{
-            printf("%d não é primo\n");
+            contador++;
         }
     }
+
+    printf("quantidade de primos entre 1 e %d: %d\n", n, contador);
+
+
+
+
+    
 
     return 0;
  
