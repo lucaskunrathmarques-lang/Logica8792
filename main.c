@@ -15,17 +15,24 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int v[10];
-    for(int i = 0; i < 10; i++){
-        printf("digite o valor %d: ", i + 1);
-        scanf("%d", &v[i]);
+    int matriz[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    printf("elementos da matriz:\n");
+
+    for(int i = 0; i <= 2; i++){
+        for(int j = 0; j <= 2; j++){
+            printf("%d\n", matriz[i][j]);
+        }
+        printf("\n");
     }
 
-    printf("vetor invertido: \n");
-    for(int i = 9; i >= 0; i--){
-        printf("%d", v[i]);
-    }
-    printf("\n");
+
+
+
 
 
 
