@@ -15,36 +15,33 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int n;
+    int n, pos;
 
     printf("digite o tamanho do vetor:");
     scanf("%d", &n);
 
     int v[n];
-    
 
     for(int i = 0; i < n; i++){
         printf("digite o valor %d: ", i + 1);
         scanf("%d", &v[i]);
     }
     
-    int ordenado = 1;
+    printf("digite a posição a remover (0 a %d): ", n - 1);
+    scanf("%d", &pos);
+
+    for(int i = pos; i < n - 1; i++){
+        v[i] = v[i + 1];
+    }
+
+    n--;
+
+    printf("vetor apos remoção: \n");
 
     for(int i = 0; i < n; i++){
-        if(v[i] > v[i + 1]){
-            ordenado = 0;
-            break;
-        }
+        printf("%d\n", v[i]);
     }
-
-    if(ordenado){
-        printf("o vetor esta ordenado de forma crescente\n");
-    }else{
-        printf("o vetor nao esta ordenado\n");
-    }
-
-
-    
+    printf("\n");
 
 
 
