@@ -26,21 +26,22 @@ int main(){
     for(int i = 0; i < n; i++){
         printf("digite o valor %d: ", i + 1);
         scanf("%d", &v[i]);
+    }
+    
+    int ordenado = 1;
 
-        if(v[i] < 0){
-            v[i] = 0;
+    for(int i = 0; i < n; i++){
+        if(v[i] > v[i + 1]){
+            ordenado = 0;
+            break;
         }
     }
 
-    printf("vetor ajustado: \n");
-
-    for(int i = 0; i < n; i++){
-        printf("%d", v[i]);
-       
+    if(ordenado){
+        printf("o vetor esta ordenado de forma crescente\n");
+    }else{
+        printf("o vetor nao esta ordenado\n");
     }
-    printf("\n");
-    
-    
 
 
     
