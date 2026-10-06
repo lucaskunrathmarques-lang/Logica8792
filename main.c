@@ -2,7 +2,6 @@
 #include<windows.h>
 #include<string.h>
 #include<math.h>
-#include "funcoes.h"
 
 
 
@@ -15,7 +14,15 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    printf("Resultado: %d\n", soma(2, 3));    
+    int numero;
+
+    do{
+        printf("digite um numero maior que 0: ");
+        scanf("%d", &numero);
+    }while(numero <= 0);
+    
+    printf("voce digitou %d, que é valido\n", numero);
+      
     
 
 
