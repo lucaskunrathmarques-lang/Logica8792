@@ -14,15 +14,43 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int i = i;
+    int n;
 
-    do{
-        printf("%d\n", i);
-        i++;
-    }while (i <= 10000);
+    printf("digite o tamanho dos vetores:");
+    scanf("%d", &n);
+
+    int a[n], b[n], soma[n];
+
+    printf("digite os valores do vetor A:\n");
+
+    for(int i = 0; i < n; i++){
+        scanf("%d", &a[i]);
+    } 
+
+    printf("digite os valores do vetor B:\n");
+
+    for(int i = 0; i < n; i++){
+        scanf("%d", &b[i]);
+    }
+
+    for(int i = 0; i < n; i++){
+        soma[i] = a[i] + b[i];
+    }
+
+    printf("vetor soma\n");
+
+    for(int i = 0; i <n; i++){
+        printf("%d\n", soma[i]);
+        printf("%d", a[i] + b[i]);
+    }
     
-      
     
+    
+    
+    
+
+
+
 
 
     return 0;
