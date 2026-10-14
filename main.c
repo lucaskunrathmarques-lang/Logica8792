@@ -20,6 +20,7 @@ int main(){
     scanf("%d", &n);
 
     int a[n], b[n], soma[n];
+    int total = 0;
 
     printf("digite os valores do vetor A:\n");
 
@@ -35,16 +36,16 @@ int main(){
 
     for(int i = 0; i < n; i++){
         soma[i] = a[i] + b[i];
+        total += soma[i];
     }
 
     printf("vetor soma\n");
 
     for(int i = 0; i <n; i++){
         printf("%d\n", soma[i]);
-        printf("%d", a[i] + b[i]);
-    }
-    
-    
+    } 
+   
+    printf("a soma total é: %d", total);    
     
     
     
