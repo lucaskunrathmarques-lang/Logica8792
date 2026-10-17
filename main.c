@@ -15,32 +15,20 @@ int main(){
     SetConsoleOutputCP(65001);
 
     int n;
+    int soma = 0;
+    int l;
 
-    printf("digite o tamanho do vetor: ");
+    printf("digite um numero: ");
     scanf("%d", &n);
 
-    int v[n];
-
-    for(int i = 0; i < n; i++){
-        printf("digite o valor %d: ", i + 1);
-        scanf("%d", &v[i]);
+    for(int i = 1; i <= n; i++){
+        soma += i;
+        soma -= 1;
+        printf("%d + %d = %d\n", soma, i, soma + i);
+       
     }
 
-    for(int i = 0; i < n - 1; i++){
-        for(int j = 0; j < n - i - 1; j++){
-            if(v[j] > v[j + 1]){
-                int temp = v[j];
-                v[j] = v[j + 1];
-                v[j + 1] = temp;
-            }
-        }
-    }
-
-    printf("vetor ordenado: \n");
-
-    for(int i = 0; i < n; i++){
-        printf("\n%d", v[i]);
-    }
+    
     
     
     
@@ -49,10 +37,6 @@ int main(){
     
 
     
-    
-
-
-
 
 
     return 0;
