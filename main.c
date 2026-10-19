@@ -14,19 +14,14 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int temIngresso;
-    int idade;
+    int n;
 
-    printf("digite sua idade: ");
-    scanf("%d", &idade);
+    printf("digite um numero para a contagem: ");
+    scanf("%d", &n);
 
-    printf("possui ingresso? (1 - Sim / 0 - Não): ");
-    scanf("%d", &temIngresso);
-
-    if(idade >= 18 && temIngresso){
-        printf("Entrada permitida!\n");
-    }else{
-        printf("Entrada não permitida!\n");
+    while(n >= 0){
+        printf("%d\n", n);
+        n--;
     }
     
     
