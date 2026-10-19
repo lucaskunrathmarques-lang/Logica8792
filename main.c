@@ -14,18 +14,11 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int n;
-    int soma = 0;
-    int l;
+    int pb = 0;
 
-    printf("digite um numero: ");
-    scanf("%d", &n);
 
-    for(int i = 1; i <= n; i++){
-        soma += i;
-        soma -= 1;
-        printf("%d + %d = %d\n", soma, i, soma + i);
-       
+    if(!pb){
+        printf("a porta esta fechada!\n");
     }
 
     
