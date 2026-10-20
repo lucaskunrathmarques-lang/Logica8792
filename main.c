@@ -14,18 +14,25 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int n;
-
-    printf("digite um numero para a contagem: ");
+    
+    int n, soma = 0;
+    
+    printf("digite um numero: ");
     scanf("%d", &n);
 
-    while(n >= 0){
-        printf("%d\n", n);
-        n--;
+    while (n != 0)
+    {
+       if(n % 2 == 0){
+            soma++;
+        }else{
+            printf("digite um numero valido\n");
+        }
+            
+            printf("\ndigite um numero( 0, para parar)");
+            scanf("%d", &n);
     }
-    
-    
-    
+   
+    printf("a soma total é, %d", soma);
     
     
     
