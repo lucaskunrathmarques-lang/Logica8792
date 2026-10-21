@@ -15,25 +15,24 @@ int main(){
     SetConsoleOutputCP(65001);
 
     
-    int n, soma = 0;
-    
-    printf("digite um numero: ");
-    scanf("%d", &n);
+    int senha = 1234;
+    int tentativa;
 
-    while (n != 0)
-    {
-       if(n % 2 == 0){
-            soma++;
-        }else{
-            printf("digite um numero valido\n");
-        }
-            
-            printf("\ndigite um numero( 0, para parar)");
-            scanf("%d", &n);
+    printf("coloque sua senha: ");
+    scanf("&d", &tentativa);
+
+    while(tentativa != senha){
+       
+      if(tentativa != senha){ 
+        printf("senha incorreta:\n ");
+      }
+
+    printf("tente novamente");
+    scanf("%d", &tentativa);
+
     }
-   
-    printf("a soma total é, %d", soma);
     
+    printf("senha aceita");
     
     
 
