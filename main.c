@@ -15,15 +15,15 @@ int main(){
     SetConsoleOutputCP(65001);
 
     
-    int n; 
+    float n; 
 
     do{
-      printf("digite um numero (positivo)");
-      scanf("%d", &n);
+      printf("digite uma nota (de 0 a 10)");
+      scanf("%f", &n);
     }
-    while (n < 0);
-    
-      printf("voce digitou: %d\n", n);
+    while (n < 0 || n > 10);
+
+      printf("nota valida: %.2f\n", n);
     
     
     
