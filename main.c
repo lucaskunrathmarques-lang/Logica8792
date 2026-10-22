@@ -15,24 +15,17 @@ int main(){
     SetConsoleOutputCP(65001);
 
     
-    int senha = 1234;
-    int tentativa;
+    int n; 
 
-    printf("coloque sua senha: ");
-    scanf("&d", &tentativa);
-
-    while(tentativa != senha){
-       
-      if(tentativa != senha){ 
-        printf("senha incorreta:\n ");
-      }
-
-    printf("tente novamente");
-    scanf("%d", &tentativa);
-
+    do{
+      printf("digite um numero (positivo)");
+      scanf("%d", &n);
     }
+    while (n < 0);
     
-    printf("senha aceita");
+      printf("voce digitou: %d\n", n);
+    
+    
     
     
 
