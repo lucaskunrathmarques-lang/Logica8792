@@ -15,23 +15,35 @@ int main(){
     SetConsoleOutputCP(65001);
 
     
-    int p;
+    int p ;
 
     printf("digite um numero: ");
     scanf("%d", &p);
 
+    
+    
+
     switch (p)
     {
+      case 3:
+      case 5:
+      case 7:
+      case 8:
+      case 10:
+      case 12:
       case 1:
-        printf("voce digitou: %d", p);
+        printf("Esse mes tem 31 dias");
+        break;
+
+      case 4:
+      case 11:
+      case 9:
+      case 6:
+        printf("Esse mes tem 30 dias");
         break;
 
       case 2:
-        printf("voce digito: %d", p);
-        break;
-
-      case 3:
-        printf("voce digitou: %d", p);
+        printf("esse mes tem 28 dias");
         break;
 
       default:
