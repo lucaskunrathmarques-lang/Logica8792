@@ -15,15 +15,29 @@ int main(){
     SetConsoleOutputCP(65001);
 
     
-    int n, s = 0;
+    int p;
 
-    do{
-      printf("digite um numero ( 0 para parar)");
-      scanf("%d", &n);
-      s += n;
-    }while(n != 0);
+    printf("digite um numero: ");
+    scanf("%d", &p);
 
-    printf("soma: %d\n", s);
+    switch (p)
+    {
+      case 1:
+        printf("voce digitou: %d", p);
+        break;
+
+      case 2:
+        printf("voce digito: %d", p);
+        break;
+
+      case 3:
+        printf("voce digitou: %d", p);
+        break;
+
+      default:
+        printf("Numero invalida\n");
+        break;
+    }
     
     
     
