@@ -12,19 +12,29 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    const int QTD = 5;
-    int numero[QTD];
+    int cartela[5] = {3, 8, 12, 15, 10};
+    int sorteado[21] = {0};
+    int acerto = 0, rodadas = 0, bola;
 
     srand(time(NULL));
 
-    for(int i = 0; i < QTD; i++){
-      numero[i] = rand() % 10 + 1;
-    }
+    while(acerto < 5){
+      do{
+        bola = rand() % 20 + 1;
+      }
+      
+      while(sorteado[bola]);
+      sorteado[bola] = 1;
+      rodadas++;
 
-    printf("numeros sorteados: %d");
+      printf("bola %d: %d\n", rodadas, bola);
 
-    for(int i = 0; i < QTD; i++){
-      printf("%d\n", numero[i]);
+      for(int i = 0; i < 5; i++){
+        if(cartela[i] == bola){
+          acerto++;
+          printf("acertou o %d! (%d de 5)\n", bola, acerto);
+        }
+      }
     }
     
     
