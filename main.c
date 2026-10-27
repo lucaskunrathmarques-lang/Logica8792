@@ -6,36 +6,32 @@
 #include<time.h>
 
 
+void matrix(int m[2][2]){
+  
+  
+  for(int i = 0; i < 2; i++){
+    for(int j = 0; j < 2; j++){
+    printf("%d\n", m[i][j]);
+   }
+   printf("\n");
+  }
+}
+
+
+
 
 int main(){
 
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
+    
+    int m[2][2] = {
+      {1, 2},
+      {3, 4}
+    };
+    matrix(m);
 
-    int cartela[5] = {3, 8, 12, 15, 10};
-    int sorteado[21] = {0};
-    int acerto = 0, rodadas = 0, bola;
-
-    srand(time(NULL));
-
-    while(acerto < 5){
-      do{
-        bola = rand() % 20 + 1;
-      }
       
-      while(sorteado[bola]);
-      sorteado[bola] = 1;
-      rodadas++;
-
-      printf("bola %d: %d\n", rodadas, bola);
-
-      for(int i = 0; i < 5; i++){
-        if(cartela[i] == bola){
-          acerto++;
-          printf("acertou o %d! (%d de 5)\n", bola, acerto);
-        }
-      }
-    }
     
     
 
