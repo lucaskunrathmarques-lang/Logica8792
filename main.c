@@ -6,15 +6,22 @@
 #include<time.h>
 
 
-void matrix(int m[2][2]){
-  
-  
-  for(int i = 0; i < 2; i++){
-    for(int j = 0; j < 2; j++){
-    printf("%d\n", m[i][j]);
-   }
-   printf("\n");
-  }
+int soma(int a, int b){
+  return a + b;
+}
+
+void soma1(){
+  int x, y, resultado;
+
+  printf("\ndigite um valor para x:");
+  scanf("%d", &x);
+
+  printf("\ndigite um valor para y:");
+  scanf("%d", &y);
+
+  resultado = x + y;
+
+  printf("\na soma do %d + %d = %d", x, y, resultado);
 }
 
 
@@ -25,11 +32,8 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    int m[2][2] = {
-      {1, 2},
-      {3, 4}
-    };
-    matrix(m);
+    int resultado = soma(5, 5);
+    printf("%d\n", resultado);
 
       
     
