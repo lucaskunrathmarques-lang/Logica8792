@@ -6,8 +6,8 @@
 #include<time.h>
 
 
-void MN(int numero){
-  printf("numero: %d\n", numero);
+void somar(int a, int b){
+  printf("soma = %d\n", a + b);
 }
 
 
@@ -19,7 +19,7 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    MN(40);
+    somar(5, 2);
 
       
     
