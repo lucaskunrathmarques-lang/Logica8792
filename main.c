@@ -6,8 +6,8 @@
 #include<time.h>
 
 
-void somar(int a, int b){
-  printf("soma = %d\n", a + b);
+void MN(char nome[]){
+  printf("nome: %s\n", nome);
 }
 
 
@@ -19,8 +19,8 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    somar(5, 2);
-
+    
+    MN("Lucas");
       
     
     
