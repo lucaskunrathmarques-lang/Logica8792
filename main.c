@@ -6,8 +6,9 @@
 #include<time.h>
 
 
-int qua(int numero){
-  return numero * numero;
+#define PI 3.14159;
+float area_circulo(float raio){
+  return PI * raio * raio;
 }
 
 
@@ -19,12 +20,10 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    int n;
-
-    printf("digite um numero, para saber o seu quadrado:" );
-    scanf("%d", &n);
-
-    printf("o quadrado do numero %d é: %d\n", n, qua(n));
+    float r;
+    printf("Raio: ");
+    scanf("%d", r);
+    printf("Area: %.2f\n", area_circulo);
 
       
     
