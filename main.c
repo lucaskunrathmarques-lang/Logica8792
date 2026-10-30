@@ -5,16 +5,15 @@
 #include<stdlib.h>
 #include<time.h>
 
-int maior(int a, int b){
-  if(a > b) return a;
-  return b;
+
+float media(float nota[], int n){
+  float soma = 0;
+  for(int i = 0; i < n; i++){
+    soma += nota[i];
+    
+  }
+  return soma / n;
 }
-
-
-int maior1(int a, int b, int c){
-  return maior(maior(a, b), c);
-}
-
 
 
 
@@ -23,10 +22,16 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    int x, y, z;
-    printf("tres numeros: ");
-    scanf("%d %d %d", &x, &y, &z);
-    printf("maior: %d\n", maior1(x, y, z));
+    float nota[5];
+
+    for(int i = 0; i < 5; i++){
+      printf("notas %d: ", i + 1);
+      scanf("%f", &nota[i]);
+    } 
+
+    printf("media: %.1f\n", media(nota, 5));
+
+
 
       
     
