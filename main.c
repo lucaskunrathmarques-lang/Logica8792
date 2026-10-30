@@ -6,14 +6,7 @@
 #include<time.h>
 
 
-float media(float nota[], int n){
-  float soma = 0;
-  for(int i = 0; i < n; i++){
-    soma += nota[i];
-    
-  }
-  return soma / n;
-}
+
 
 
 
@@ -22,15 +15,21 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    float nota[5];
+    int vet[10];
 
-    for(int i = 0; i < 5; i++){
-      printf("notas %d: ", i + 1);
-      scanf("%f", &nota[i]);
-    } 
+    for(int i = 0; i < 10; i++){
+      printf("valor %d: ", i + 1);
+      scanf("%d", &vet[i]);
+    }
 
-    printf("media: %.1f\n", media(nota, 5));
+    printf("\nvetor: ");
 
+      for(int i = 0; i < 10; i++){
+        printf("%d", vet[i]);
+        printf("\n");
+      }
+
+     
 
 
       
