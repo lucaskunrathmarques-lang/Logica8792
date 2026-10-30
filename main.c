@@ -6,7 +6,7 @@
 #include<time.h>
 
 
-#define PI 3.14159;
+#define PI 3.14159
 float area_circulo(float raio){
   return PI * raio * raio;
 }
@@ -22,8 +22,8 @@ int main(){
     
     float r;
     printf("Raio: ");
-    scanf("%d", r);
-    printf("Area: %.2f\n", area_circulo);
+    scanf("%f", &r);
+    printf("Area: %.2f\n", area_circulo(r));
 
       
     
