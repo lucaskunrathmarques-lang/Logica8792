@@ -15,18 +15,40 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    int n[5];
-    int soma = 0;
+    int a[2][2], b[2][2], soma[2][2];
 
-    for(int i = 0; i < 5; i++){
-      printf("digite o %d numero: ", i + 1);
-      scanf("%d", &n[i]);
-      soma = soma + n[i];
+    printf("matriz a:\n");
+
+    for(int i = 0; i < 2; i++){
+      for(int j = 0; j < 2; j++){
+        printf("a[%d][%d]: ", i, j);
+        scanf("%d", &a[i][j]);
+      }
     }
 
-    printf("\nsoma = %d\n", soma);
+    printf("matris b:\n");
 
-    
+    for(int i = 0; i < 2; i++){
+      for(int j = 0; j < 2; j++){
+        printf("b[%d][%d]: ", i, j);
+        scanf("%d", &b[i][j]);
+      }
+    }
+
+    for(int i = 0; i < 2; i++){
+      for(int j = 0; j < 2; j++){
+        soma [i][j] = a[i][j] + b[i][j];
+      }
+    }
+
+    printf("\nA + B:\n");
+
+    for(int i = 0; i < 2; i++){
+      for(int j = 0; j < 2; j++){
+        printf("%d", soma[i][j]);
+      }
+      printf("\n");
+    }
 
 
       
