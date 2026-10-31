@@ -15,21 +15,18 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    int vet[10];
+    int n[5];
+    int soma = 0;
 
-    for(int i = 0; i < 10; i++){
-      printf("valor %d: ", i + 1);
-      scanf("%d", &vet[i]);
+    for(int i = 0; i < 5; i++){
+      printf("digite o %d numero: ", i + 1);
+      scanf("%d", &n[i]);
+      soma = soma + n[i];
     }
 
-    printf("\nvetor: ");
+    printf("\nsoma = %d\n", soma);
 
-      for(int i = 0; i < 10; i++){
-        printf("%d", vet[i]);
-        printf("\n");
-      }
-
-     
+    
 
 
       
