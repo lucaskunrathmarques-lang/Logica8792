@@ -6,7 +6,9 @@
 #include<time.h>
 
 
-
+int ehpar(int n){
+  return n % 2 == 0;
+}
 
 
 
@@ -15,20 +17,21 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    char texto[100];
-    int tamanho = 0;
+    int quantidade = 0;
+    int soma = 0;
 
-    printf("digite uma frase: ");
-    
-    fgets(texto, 100, stdin);
+    printf("pares de 1 a 20: ");
 
-    texto[strcspn(texto, "\n")] = '\0';
-
-    while(texto[tamanho] != '\0'){
-      tamanho++;
+    for(int i = 1; i <= 20; i++){
+        if(ehpar(i)){
+          printf("%d\n", i);
+          quantidade++;
+          soma += i;
+        }
     }
 
-    printf("quantidade de caracteres: %d\n", tamanho);
+    printf("\nqunatidade: %d\n", quantidade);
+    printf("soma: %d\n", soma);
     
 
 
