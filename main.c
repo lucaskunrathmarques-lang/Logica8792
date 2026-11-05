@@ -6,13 +6,17 @@
 #include<time.h>
 
 
-int buscar(float vetor[], int tamanho, float chave){
-  for(int i = 0; i < tamanho; i++){
-    if(vetor[i] == chave){
-      return 1;
+float lerp(char mansagem[]){
+  float valor;
+  do{
+    printf("%s", mansagem);
+    scanf("%f", &valor);
+
+    if(valor <= 0){
+      printf("valor invalido! digite um numero maior que 0.\n");
     }
-  }
-  return -1;
+  }while(valor <= 0);
+  return valor;
 }
 
 
@@ -22,22 +26,12 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    float numero[] = {10.5, 20.5, 30.5, 40.5, 50.5};
-    int tamanho = 5;
-    float procurado;
+    float idade = lerp("digite a idade:");
+    float peso = lerp("digite o peso (kg): ");
+    float altura = lerp("digite a altura (m):");
 
-    printf("digite o numero que deseja procurar: ");
-    scanf("%f", &procurado);
-
-    int resultado = buscar(numero, tamanho, procurado);
-
-    if(resultado  != -1){
-      printf("numero encontrado!\n");
-      printf("valor: %.2f\n", numero[resultado]);
-      printf("posição do vetor: %d\n", resultado);
-    }else{
-      printf("numero nao encontrado!\n");
-    }
+    printf("\nidade: %.1f anos\n", idade);
+    printf("IMC: %f\n", peso / (altura * altura));
     
 
 
