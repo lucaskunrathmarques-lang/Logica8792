@@ -6,13 +6,11 @@
 #include<time.h>
 
 
-void tabuada(int numero, int contador){
-  if(contador > 10){
-    return;
+int contardigitos(int numero){
+  if(numero < 10){
+    return 1;
   }
-  printf("%d X %d = %d\n", numero, contador, numero * contador);
-
-  tabuada(numero, contador + 1);
+  return 1 + contardigitos(numero / 10);
 }
 
 
@@ -22,12 +20,7 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    int n;
-
-    printf("digite o numero da tabuada: ");
-    scanf("%d", &n);
-
-    tabuada(n, 1);
+    printf("quantidade : %d\n", contardigitos(458472));
     
     
     
