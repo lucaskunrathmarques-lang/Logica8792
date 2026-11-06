@@ -6,10 +6,13 @@
 #include<time.h>
 
 
-int soma(int n){
-  for(int i = 0; i <= 5; i++){
-    printf("%d\n", i);
+void contar(int n){
+  if(n == 0){
+    return;
   }
+
+  contar(n - 1);
+  printf("%d\n", n);
 }
 
 
@@ -20,8 +23,8 @@ int main(){
     SetConsoleOutputCP(65001);
     
    
-
-    soma(1);
+    contar(5);
+    
     
     
     
