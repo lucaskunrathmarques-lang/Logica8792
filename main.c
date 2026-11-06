@@ -6,13 +6,11 @@
 #include<time.h>
 
 
-void contar(int n){
+int somar(int n){
   if(n == 0){
-    return;
+    return 0;
   }
-
-  contar(n - 1);
-  printf("%d\n", n);
+  return n + somar(n - 1);
 }
 
 
@@ -23,7 +21,9 @@ int main(){
     SetConsoleOutputCP(65001);
     
    
-    contar(5);
+    int resultado = somar(5);
+
+    printf("resultado: %d\n", resultado);
     
     
     
