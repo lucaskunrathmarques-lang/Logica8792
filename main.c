@@ -6,11 +6,13 @@
 #include<time.h>
 
 
-int somar(int n){
-  if(n == 0){
-    return 0;
+void tabuada(int numero, int contador){
+  if(contador > 10){
+    return;
   }
-  return n + somar(n - 1);
+  printf("%d X %d = %d\n", numero, contador, numero * contador);
+
+  tabuada(numero, contador + 1);
 }
 
 
@@ -20,10 +22,13 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-   
-    int resultado = somar(5);
+    int n;
 
-    printf("resultado: %d\n", resultado);
+    printf("digite o numero da tabuada: ");
+    scanf("%d", &n);
+
+    tabuada(n, 1);
+    
     
     
     
