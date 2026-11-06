@@ -6,17 +6,14 @@
 #include<time.h>
 
 
-float lerp(char mansagem[]){
-  float valor;
-  do{
-    printf("%s", mansagem);
-    scanf("%f", &valor);
+void contagem(int n){
+  if(n == 0){
+    printf("fogo!\n");
+    return;
+  }
 
-    if(valor <= 0){
-      printf("valor invalido! digite um numero maior que 0.\n");
-    }
-  }while(valor <= 0);
-  return valor;
+  printf("%d\n", n);
+  contagem(n - 1);
 }
 
 
@@ -26,12 +23,8 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    float idade = lerp("digite a idade:");
-    float peso = lerp("digite o peso (kg): ");
-    float altura = lerp("digite a altura (m):");
-
-    printf("\nidade: %.1f anos\n", idade);
-    printf("IMC: %f\n", peso / (altura * altura));
+    contagem(5);
+    
     
 
 
