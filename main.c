@@ -5,15 +5,15 @@
 #include<stdlib.h>
 #include<time.h>
 
+float soma(int n){
+  int total = 0;
 
-float CparaF(){
-  float cel;
-
-  printf("digite a temperatura em celsius: ");
-  scanf("%f", &cel);
-
-  return cel * 9 / 5 + 32;
+  for(int i = 1; i <= n; i++){
+        total += i;
+  }
+  return total;
 }
+
 
 
 
@@ -22,11 +22,11 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    float fah;
+    int m;
 
-    fah = CparaF();
+    m = soma(5);
 
-    printf("temperatura em fahrenheit: %.1f F\n", fah);
+    printf("\nsoma de 1 a N: %d\n", m);
     
     
     
