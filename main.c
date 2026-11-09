@@ -6,8 +6,13 @@
 #include<time.h>
 
 
-float CparaF(float c){
-  return c * 9 / 5 + 32;
+float CparaF(){
+  float cel;
+
+  printf("digite a temperatura em celsius: ");
+  scanf("%f", &cel);
+
+  return cel * 9 / 5 + 32;
 }
 
 
@@ -17,14 +22,11 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    float cel, fah;
+    float fah;
 
-    printf("digite a temperatura em celsius: ");
-    scanf("%f", &cel);
+    fah = CparaF();
 
-    fah = CparaF(cel);
-
-    printf("%.1f C = %.1f F\n", cel, fah);
+    printf("temperatura em fahrenheit: %.1f F\n", fah);
     
     
     
