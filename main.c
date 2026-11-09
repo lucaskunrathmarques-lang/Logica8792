@@ -6,8 +6,8 @@
 #include<time.h>
 
 
-float areare(float base, float altura){
-    return base * altura;
+float CparaF(float c){
+  return c * 9 / 5 + 32;
 }
 
 
@@ -17,17 +17,14 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    float a, n;
+    float cel, fah;
 
-    printf("digite a base e a altura do retangulo: ");
-   
-    printf("\nbase: ");
-    scanf("%f", &a);
-    
-    printf("altura: ");
-    scanf("%f", &n);
+    printf("digite a temperatura em celsius: ");
+    scanf("%f", &cel);
 
-    printf("area: %.2f\n", areare(a, n));
+    fah = CparaF(cel);
+
+    printf("%.1f C = %.1f F\n", cel, fah);
     
     
     
