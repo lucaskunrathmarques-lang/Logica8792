@@ -5,7 +5,7 @@
 #include<stdlib.h>
 #include<time.h>
 
-float soma(int n){
+int soma(int n){
   int total = 0;
 
   for(int i = 1; i <= n; i++){
@@ -24,9 +24,10 @@ int main(){
     
     int m;
 
-    m = soma(5);
+    printf("digite um valor: ");
+    scanf("%d", &m);
 
-    printf("\nsoma de 1 a N: %d\n", m);
+    printf("\nsoma de 1 a N: %d\n", soma(m));
     
     
     
