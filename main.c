@@ -6,11 +6,8 @@
 #include<time.h>
 
 
-void contagem (int n){
-    for( int i = n; i >= 1; i--){
-      printf("%d\n", i);
-    }
-  printf("fogo!!");
+float areare(float base, float altura){
+    return base * altura;
 }
 
 
@@ -20,7 +17,7 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    contagem(5);
+    printf("area: %.2f\n", areare(5, 3.5));
     
     
     
