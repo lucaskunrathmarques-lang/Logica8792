@@ -6,11 +6,10 @@
 #include<time.h>
 
 
-int somardigitos(int numero){
-  if(numero == 0){
-    return 0;
+void contar(int n){
+  for(int i = 1; i <= n; i++){
+    printf("%d\n", i);
   }
-  return (numero % 10) + somardigitos(numero / 10);
 }
 
 
@@ -20,7 +19,7 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    printf("soma: %d\n", somardigitos(1234));
+    contar(5);
     
     
     
