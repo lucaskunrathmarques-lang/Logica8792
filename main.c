@@ -6,10 +6,11 @@
 #include<time.h>
 
 
-long long fatorial(int n){
-  long long resultado = 1;
-  for(int i = 2; i <= n; i++){
-    resultado *= i;
+int potencia(int base, int expoente){
+  int resultado = 1;
+
+  for(int i = 0; i < expoente; i++){
+    resultado *= base;
   }
   return resultado;
 }
@@ -21,7 +22,7 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    printf("5! = %lld\n", fatorial(5));
+    printf("2 elevado a 5 = %d\n", potencia(2, 5));
     
     
     
