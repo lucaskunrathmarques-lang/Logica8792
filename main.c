@@ -6,10 +6,11 @@
 #include<time.h>
 
 
-void contar(int n){
-  for(int i = 1; i <= n; i++){
-    printf("%d\n", i);
-  }
+void contagem (int n){
+    for( int i = n; i >= 1; i--){
+      printf("%d\n", i);
+    }
+  printf("fogo!!");
 }
 
 
@@ -19,7 +20,7 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    contar(5);
+    contagem(5);
     
     
     
