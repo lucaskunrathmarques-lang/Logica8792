@@ -17,7 +17,17 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    printf("area: %.2f\n", areare(5, 3.5));
+    float a, n;
+
+    printf("digite a base e a altura do retangulo: ");
+   
+    printf("\nbase: ");
+    scanf("%f", &a);
+    
+    printf("altura: ");
+    scanf("%f", &n);
+
+    printf("area: %.2f\n", areare(a, n));
     
     
     
