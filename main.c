@@ -6,11 +6,16 @@
 #include<time.h>
 
 
-int absoluto(int n){
-  if(n < 0){
-    return n *= -1;
+int maiordetres(int a, int b, int c){
+  int maior = a;
+
+  if(b > maior){
+    maior = b;
   }
-  return n;
+  if(c > maior){
+    maior = c;
+  }
+  return maior;
 }
 
 
@@ -20,13 +25,12 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    printf("%d\n", absoluto(-8));
-    
-    printf("%d\n", absoluto(4));
-   
-    printf("%d\n", absoluto(0));
+    int n, m, l;
 
-    
+    printf("digite 3 numero: ");
+    scanf("%d %d %d", &n, &m, &l);
+
+    printf("o maior numeor é: %d\n", maiordetres(n, m, l));
     
     
     
