@@ -6,16 +6,13 @@
 #include<time.h>
 
 
-int somadigitos(int n){
-  int soma = 0;
-  
-  while (n != 0)
-  {
-    soma += n % 10;
-    n /= 10;
-  }
-  return soma;
-  }
+int quadrado(int n){
+  return n * n;
+}
+
+int cubo(int n){
+  return n * n * n;
+}
 
 
 
@@ -24,12 +21,12 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    int n;
+    int i;
 
-    printf("digite um numero: ");
-    scanf("%d", &n);
+    printf("deigite um numero para saber o seu quadrado e o seu cubo: ");
+    scanf("%d", &i);
 
-    printf("soma dos digitos é: %d\n", somadigitos(n));
+    printf("o quadradode %d é: %d\n o cubo de %d é: %d\n", i, quadrado(i), i, cubo(i));
     
     
     
