@@ -6,14 +6,16 @@
 #include<time.h>
 
 
-int potencia(int base, int expoente){
-  int resultado = 1;
-
-  for(int i = 0; i < expoente; i++){
-    resultado *= base;
+int somadigitos(int n){
+  int soma = 0;
+  
+  while (n != 0)
+  {
+    soma += n % 10;
+    n /= 10;
   }
-  return resultado;
-}
+  return soma;
+  }
 
 
 
@@ -22,7 +24,12 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    printf("2 elevado a 5 = %d\n", potencia(2, 5));
+    int n;
+
+    printf("digite um numero: ");
+    scanf("%d", &n);
+
+    printf("soma dos digitos é: %d\n", somadigitos(n));
     
     
     
