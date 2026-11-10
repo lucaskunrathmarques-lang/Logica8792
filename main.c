@@ -6,12 +6,11 @@
 #include<time.h>
 
 
-int quadrado(int n){
-  return n * n;
-}
-
-int cubo(int n){
-  return n * n * n;
+int absoluto(int n){
+  if(n < 0){
+    return n *= -1;
+  }
+  return n;
 }
 
 
@@ -21,13 +20,12 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    int i;
-
-    printf("deigite um numero para saber o seu quadrado e o seu cubo: ");
-    scanf("%d", &i);
-
-    printf("o quadradode %d é: %d\n o cubo de %d é: %d\n", i, quadrado(i), i, cubo(i));
+    printf("%d\n", absoluto(-8));
     
+    printf("%d\n", absoluto(4));
+   
+    printf("%d\n", absoluto(0));
+
     
     
     
