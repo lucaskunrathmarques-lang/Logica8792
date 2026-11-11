@@ -6,17 +6,7 @@
 #include<time.h>
 
 
-int maiordetres(int a, int b, int c){
-  int maior = a;
 
-  if(b > maior){
-    maior = b;
-  }
-  if(c > maior){
-    maior = c;
-  }
-  return maior;
-}
 
 
 
@@ -25,12 +15,20 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    int n, m, l;
+    for(int i = 0; i<= 10; i++){
+      printf("%d\n", i);
+    }
 
-    printf("digite 3 numero: ");
-    scanf("%d %d %d", &n, &m, &l);
+    for(int i = 0; i <= 10; i++){
+      if(i % 2 == 0){
+        printf("\no numero %d é par\n", i);
+      }else{
+        printf("\no numero %d é impar\n", i);
+      }
+    }
+    
+    
 
-    printf("o maior numeor é: %d\n", maiordetres(n, m, l));
     
     
     
