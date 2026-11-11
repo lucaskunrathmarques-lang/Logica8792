@@ -15,15 +15,11 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    for(int i = 0; i<= 10; i++){
-      printf("%d\n", i);
-    }
+    int total = 0;
 
-    for(int i = 0; i <= 10; i++){
-      if(i % 2 == 0){
-        printf("\no numero %d é par\n", i);
-      }else{
-        printf("\no numero %d é impar\n", i);
+    for(int i = 0; i <= 100; i++){
+      if(i % 10 == 7){
+        printf("%d\n", i);
       }
     }
     
