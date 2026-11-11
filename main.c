@@ -15,17 +15,18 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    int soma = 0;
+    for(int i = 10; i <= 99; i++){
+      
+      int dezena = i / 10;
+      int unidade = i % 10;
 
-    for(int i = 1; i <= 50; i++){
-      if(i % 2 == 1){
+      if(dezena == unidade){
         printf("%d\n", i);
-        soma += i;
       }
+
+      
     }
-    
-    printf("a soma dos numeros é: %d\n", soma);
-    
+
 
     
     
