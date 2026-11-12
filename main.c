@@ -15,19 +15,17 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    for(int i = 10; i <= 99; i++){
-      
-      int dezena = i / 10;
-      int unidade = i % 10;
+    int n;
 
-      if(dezena == unidade){
+    for(int i = 1; i <= 1000; i++){
+
+      if(i % 7 == 0 && i % 2 != 0){
         printf("%d\n", i);
+        n++;
       }
-
-      
     }
 
-
+    printf("total de numeros que são diviziveis por 7 e não por 2: %d\n", n);
     
     
     
