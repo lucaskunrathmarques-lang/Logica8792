@@ -17,13 +17,13 @@ int main(){
     
     int n;
 
-    for(int i = 0; i <= 200; i++){
-      if(i % 10 == 3){
-        n++;
+    for(int i = 1; i <= 100; i++){
+      if(i % 10 == 0 || i % 10 == 5){
+        n += i;
       }
     }
 
-    printf("total de numero que terminam em 3 é: %d\n", n);
+    printf("%d\n", n);
 
     
     
