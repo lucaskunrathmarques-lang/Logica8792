@@ -16,16 +16,21 @@ int main(){
     SetConsoleOutputCP(65001);
     
     int n;
+    int total;
 
-    for(int i = 1; i <= 100; i++){
-      if(i % 10 == 0 || i % 10 == 5){
-        n += i;
+    for(int i = 10; i <= 100; i++){
+      int dezena = i / 10;
+      int unidade = i % 10;
+
+      n = dezena + unidade;
+
+      if(n == 10){
+        printf("%d\n", i);
+        total++;
       }
     }
 
-    printf("%d\n", n);
-
-    
+    printf("o numero total é: %d", total);
     
     
 
