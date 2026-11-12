@@ -15,12 +15,15 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    for(int ano = 2000; ano <= 2030; ano++){
-      if(ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0){
-        printf("ano bissexto %d\n", ano);
+    int n;
+
+    for(int i = 0; i <= 200; i++){
+      if(i % 10 == 3){
+        n++;
       }
     }
 
+    printf("total de numero que terminam em 3 é: %d\n", n);
 
     
     
