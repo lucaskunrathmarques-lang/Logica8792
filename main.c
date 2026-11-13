@@ -18,13 +18,9 @@ int main(){
     int n;
     int total;
 
-    for(int i = 10; i <= 100; i++){
-      int dezena = i / 10;
-      int unidade = i % 10;
-
-      
-
-      if(dezena *2 == unidade){
+    for(int i = 1; i <= 100; i++){
+    
+      if(i % 4 == 0){
         printf("%d\n", i);
         total++;
       }
