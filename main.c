@@ -15,20 +15,20 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    int n;
-    int total;
+    int n = 0;
 
-    for(int i = 1; i <= 100; i++){
-    
-      if(i % 4 == 0){
+    for(int i = 100; i <= 999; i++){
+      int centena = i / 100;
+      int unidade = i % 10;
+      
+      if(centena == unidade){
         printf("%d\n", i);
-        total++;
+        n++;
       }
-    }
 
-    printf("o numero total é: %d", total);
+    }
     
-    
+    printf("palindroma de 3 digitos: %d\n", n);
 
 
 
