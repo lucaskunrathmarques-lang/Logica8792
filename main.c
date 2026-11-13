@@ -22,9 +22,9 @@ int main(){
       int dezena = i / 10;
       int unidade = i % 10;
 
-      n = dezena + unidade;
+      n = dezena < unidade;
 
-      if(n == 10){
+      if(n){
         printf("%d\n", i);
         total++;
       }
